@@ -1,0 +1,6 @@
+forecast_horizon,risk_probability,warning_level
++1 day,0.79865384,SEVERE
++2 day,0.5741136,HIGH
++3 day,0.900477,EXTREME
++4 day,0.9876329,EXTREME
++5 day,0.98556733,EXTREME

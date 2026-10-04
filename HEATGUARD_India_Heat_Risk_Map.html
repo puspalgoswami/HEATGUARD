@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_0303b4e5d5e9af7d5775d0763066f927 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_0303b4e5d5e9af7d5775d0763066f927" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_0303b4e5d5e9af7d5775d0763066f927 = L.map(
+                "map_0303b4e5d5e9af7d5775d0763066f927",
+                {
+                    center: [22.5, 79.0],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 5,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_4a7cb9ad2a0def2f4b97e01488653b0a = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_4a7cb9ad2a0def2f4b97e01488653b0a.addTo(map_0303b4e5d5e9af7d5775d0763066f927);
+        
+    
+            var circle_marker_7616516ec9c7e5a651113abea92ab164 = L.circleMarker(
+                [23.0225, 72.5714],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14, "stroke": true, "weight": 2}
+            ).addTo(map_0303b4e5d5e9af7d5775d0763066f927);
+        
+    
+        var popup_04883c9ccdd445bcf9467fc2e5a6f15e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_cd69c361b0c49706be488c24f5276227 = $(`<div id="html_cd69c361b0c49706be488c24f5276227" style="width: 100.0%; height: 100.0%;">     <div style="width:260px">          <h3>🔥 HEATGUARD</h3>          <b>City:</b> Ahmedabad<br><br>          <b>Peak Forecast:</b>         +3 day<br>          <b>Heat Probability:</b>         98.64%<br>          <b>Vulnerability:</b>         66.75/100<br>          <b>Human Health Risk:</b>         89.07/100<br>          <b>Warning:</b>         EXTREME      </div>     </div>`)[0];
+                popup_04883c9ccdd445bcf9467fc2e5a6f15e.setContent(html_cd69c361b0c49706be488c24f5276227);
+            
+        
+
+        circle_marker_7616516ec9c7e5a651113abea92ab164.bindPopup(popup_04883c9ccdd445bcf9467fc2e5a6f15e)
+        ;
+
+        
+    
+    
+            circle_marker_7616516ec9c7e5a651113abea92ab164.bindTooltip(
+                `<div>
+                     Ahmedabad | EXTREME | 89.1/100
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e9f852c172bf95d0850b8cd3d0b02944 = L.circleMarker(
+                [28.6139, 77.209],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14, "stroke": true, "weight": 2}
+            ).addTo(map_0303b4e5d5e9af7d5775d0763066f927);
+        
+    
+        var popup_5ea3e35815c79a06be3d8b7696578d93 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_457c6e140d93d054695b75cd4193c794 = $(`<div id="html_457c6e140d93d054695b75cd4193c794" style="width: 100.0%; height: 100.0%;">     <div style="width:260px">          <h3>🔥 HEATGUARD</h3>          <b>City:</b> Delhi<br><br>          <b>Peak Forecast:</b>         +1 day<br>          <b>Heat Probability:</b>         99.76%<br>          <b>Vulnerability:</b>         72.50/100<br>          <b>Human Health Risk:</b>         91.58/100<br>          <b>Warning:</b>         EXTREME      </div>     </div>`)[0];
+                popup_5ea3e35815c79a06be3d8b7696578d93.setContent(html_457c6e140d93d054695b75cd4193c794);
+            
+        
+
+        circle_marker_e9f852c172bf95d0850b8cd3d0b02944.bindPopup(popup_5ea3e35815c79a06be3d8b7696578d93)
+        ;
+
+        
+    
+    
+            circle_marker_e9f852c172bf95d0850b8cd3d0b02944.bindTooltip(
+                `<div>
+                     Delhi | EXTREME | 91.6/100
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f81269c42a1e6772287f3865f91a7e0f = L.circleMarker(
+                [22.5726, 88.3639],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14, "stroke": true, "weight": 2}
+            ).addTo(map_0303b4e5d5e9af7d5775d0763066f927);
+        
+    
+        var popup_9dc231ebcfc4a39a248b3ec2528a3e10 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_305a7acd4173e99e9eef17a4ef2ce1e5 = $(`<div id="html_305a7acd4173e99e9eef17a4ef2ce1e5" style="width: 100.0%; height: 100.0%;">     <div style="width:260px">          <h3>🔥 HEATGUARD</h3>          <b>City:</b> Kolkata<br><br>          <b>Peak Forecast:</b>         +4 day<br>          <b>Heat Probability:</b>         98.76%<br>          <b>Vulnerability:</b>         70.75/100<br>          <b>Human Health Risk:</b>         90.36/100<br>          <b>Warning:</b>         EXTREME      </div>     </div>`)[0];
+                popup_9dc231ebcfc4a39a248b3ec2528a3e10.setContent(html_305a7acd4173e99e9eef17a4ef2ce1e5);
+            
+        
+
+        circle_marker_f81269c42a1e6772287f3865f91a7e0f.bindPopup(popup_9dc231ebcfc4a39a248b3ec2528a3e10)
+        ;
+
+        
+    
+    
+            circle_marker_f81269c42a1e6772287f3865f91a7e0f.bindTooltip(
+                `<div>
+                     Kolkata | EXTREME | 90.4/100
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5938927f59f82fe1dd5582d3154a1525 = L.circleMarker(
+                [19.076, 72.8777],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14, "stroke": true, "weight": 2}
+            ).addTo(map_0303b4e5d5e9af7d5775d0763066f927);
+        
+    
+        var popup_7317a3dfa371f9fce41d4d06657e350e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_662f327c49a32cefb3945ff7291967c4 = $(`<div id="html_662f327c49a32cefb3945ff7291967c4" style="width: 100.0%; height: 100.0%;">     <div style="width:260px">          <h3>🔥 HEATGUARD</h3>          <b>City:</b> Mumbai<br><br>          <b>Peak Forecast:</b>         +3 day<br>          <b>Heat Probability:</b>         96.80%<br>          <b>Vulnerability:</b>         68.50/100<br>          <b>Human Health Risk:</b>         88.31/100<br>          <b>Warning:</b>         EXTREME      </div>     </div>`)[0];
+                popup_7317a3dfa371f9fce41d4d06657e350e.setContent(html_662f327c49a32cefb3945ff7291967c4);
+            
+        
+
+        circle_marker_5938927f59f82fe1dd5582d3154a1525.bindPopup(popup_7317a3dfa371f9fce41d4d06657e350e)
+        ;
+
+        
+    
+    
+            circle_marker_5938927f59f82fe1dd5582d3154a1525.bindTooltip(
+                `<div>
+                     Mumbai | EXTREME | 88.3/100
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7acc5690a9812ae290e64265bbdc673f = L.circleMarker(
+                [34.0837, 74.7973],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14, "stroke": true, "weight": 2}
+            ).addTo(map_0303b4e5d5e9af7d5775d0763066f927);
+        
+    
+        var popup_e91440f207c18bf83514eb1179cf0744 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3fd4c60f09e48596f0c2b6d43b7897cb = $(`<div id="html_3fd4c60f09e48596f0c2b6d43b7897cb" style="width: 100.0%; height: 100.0%;">     <div style="width:260px">          <h3>🔥 HEATGUARD</h3>          <b>City:</b> Srinagar<br><br>          <b>Peak Forecast:</b>         +5 day<br>          <b>Heat Probability:</b>         0.38%<br>          <b>Vulnerability:</b>         46.75/100<br>          <b>Human Health Risk:</b>         14.29/100<br>          <b>Warning:</b>         LOW      </div>     </div>`)[0];
+                popup_e91440f207c18bf83514eb1179cf0744.setContent(html_3fd4c60f09e48596f0c2b6d43b7897cb);
+            
+        
+
+        circle_marker_7acc5690a9812ae290e64265bbdc673f.bindPopup(popup_e91440f207c18bf83514eb1179cf0744)
+        ;
+
+        
+    
+    
+            circle_marker_7acc5690a9812ae290e64265bbdc673f.bindTooltip(
+                `<div>
+                     Srinagar | LOW | 14.3/100
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            tile_layer_4a7cb9ad2a0def2f4b97e01488653b0a.addTo(map_0303b4e5d5e9af7d5775d0763066f927);
+        
+</script>
+</html>
